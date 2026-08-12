@@ -16,7 +16,7 @@ Automatically ban discord users when they leave the server.
         if enough space, maybe multiple if not enoguh space)
   - [ ] Who to exempt (which roles - setting, in a multi-select select menu if
         enough space)
-
+- [ ] Ban onky after 5min of user ledt and cancel if they come back
 ## Installation & Usage
 
 1. Install source code via git: `git clone <repo url>`, if you wish to
