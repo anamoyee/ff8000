@@ -27,7 +27,7 @@ echo "${C_BLUE}Info:${C_RESET} Running in '${environment}' environment"
 if [[ -v OVERRIDE_TOKEN ]]; then
 	bot_token="${OVERRIDE_TOKEN}"
 else
-	bot_token=$(pass "discord_tokens/${environment}/ProtoBan")
+	bot_token=$(pass "discord_tokens/${environment}/ff8000")
 	if [[ $? -ne 0 ]]; then
 		echo "${C_RED}Error:${C_RESET} Failed to retrieve token from pass"
 		exit 1
@@ -46,4 +46,4 @@ if [[ "${environment}" != "dev" ]]; then
 	python_args+=("-OO")
 fi
 
-BOT_ENVIRONMENT="${environment}" BOT_TOKEN="${bot_token}" ./.venv/bin/python "${python_args[@]}" ./.venv/bin/protoban "$@"
+BOT_ENVIRONMENT="${environment}" BOT_TOKEN="${bot_token}" ./.venv/bin/python "${python_args[@]}" ./.venv/bin/ff8000 "$@"

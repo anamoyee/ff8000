@@ -1,26 +1,47 @@
-# ProtoBan
+# `ff8000`
 
-Automatically ban discord users when they leave the server.
+A customizable, modular, fully-typed discord bot written in python (hikari). Designed for a mix of standard modules as well as easy integration with your own custom functionality, all in one sleek bot user on your server.
+
+Forked from one of my projects, ProtoBan.
 
 ## Todo
 
-- [ ] Fix the issue with socket disconnecting after you leave the bot running
-      for a while, that results in a big fat error (see `log_61.log`)
-- [ ] Add `pre-commit` which will SHOW (But not fail the commit) if
-      `ty` or `ruff` yell - this is there to not miss any todo comments or other
-      ruff improvements
-- [ ] Kick after X days of inactivity
-  - [ ] Setting: how many days of inactivity
-  - [ ] Setting: Exchange the kick for a ban
-  - [ ] Who to exempt (which permissions - setting, in a mutli-select selectmenu
-        if enough space, maybe multiple if not enoguh space)
-  - [ ] Who to exempt (which roles - setting, in a multi-select select menu if
-        enough space)
-- [ ] Ban onky after 5min of user ledt and cancel if they come back
+- Add `pre-commit` with hooks:
+  - `ty`
+  - `ruff`
+- Fix shellcheck errors in `run.sh`
+- Add `CONTRIBUTING.md`, with among other guidelines:
+  - require AI disclosure if used
+- Tweak the documentation on how to use `run.sh`'s modes (`dev`, `prod`), and suggest `./run.sh prod` instead of not putting an argument (which defaults to `dev` which might result in dev features being enabled.)
+- Add an example mod(s) and include the suggested dir/file structure (e.g. `mkdir -p commands/admin events hooks view`) as well as the required __init__.py shape.
+- Add a documentation page (maybe use Github Wiki?) with a guide on how to make your own mod
+  - How should a mod declare its privilidged intents? (in its readme?)
+  - How should a mod declare its required bot install modes (user install, guild install)
+  - How should a mod declare its bot emojis
+    - Possibly `_.emoji` - standard config and resolution? Maybe just tools to parse a """ """ string
+    - 
+    - How should the emoji IDs be put into the static config?
+- Implement the stdlib mod (`mods._`)
+  - Database (`sqlmodel`)
+  - Settings (config)
+  - Localization
+  - Prefix commands (shell-like parsing with forked fixed version of arguably or a new written one, name it nya-cli)
+  - ...
+- ~~Use uv workspaces and git submodules for the mods to be able to define their own dependencies. ~~
+  - Alternative: use namespace package: `ff8000.mods` and have ~~pip~~ *uv* handle the order resolution.
+- Everytihng in the google keep note
+- Update the license so it correctly works with the mods (AGPL currently doesnt let anyone have private mods, which is not what i wnat, but i do want AGPL for the bot's core)
+
+Bot like RedDiscordBot (with module system and stdlib), but with arguably-like command parsing (arguably has some bugs, just make your own command parsing lib like nya-cli and have it be able to hook into any list[str] instead of being tied to sys.argv, for interpolations use nya-execute or whatever it's called
+use absolute import paths so import shit doesn't get fucked. mods can depend on other mods. pick mod execution order like the other version of modular bot - dependencies come first. base ("_") mod always comes first.
+
+‼️ EVEN BETTER: mods are submodules, a namespace package architecture is used where `botname.mods` is a namespace package (no __init__.py), mods declare their own dependencies via uv workspaces:
+[tool.uv.workspace]
+members = ["mods/*"] ;; PACKAGE NAME IDEAS (later choose one): "ff8000", "bottom" ‼️for db use sqlmodel, see example here https://pastebin.com/dUXDGYXg with alembic for migraitons
+
 ## Installation & Usage
 
-1. Install source code via git: `git clone <repo url>`, if you wish to
-   make changes in the future, fork this repository.
+1. Install source code via git: `git clone <repo url>`, **definitely fork this repository** to make changes like: adding your own mods, configuring static config files of said mods.
 
 2. Install `uv` python package manager (through your distro's package manager
    or `pipx` or [Astral's (uv's authors) script][uv-docs], (descending order of

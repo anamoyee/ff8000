@@ -1,7 +1,7 @@
 [project]
-name            = 'protoban'
+name            = 'ff8000'
 dynamic         = ['version']
-description     = 'Automatically bans a discord users when they leave the server.'
+description     = 'A customizable, modular, fully-typed discord bot written in python (hikari). Designed for a mix of standard modules as well as easy integration with your own custom functionality, all in one sleek bot user on your server. Forked from one of my projects, ProtoBan.'
 readme          = "README.md"
 requires-python = "==3.14.6"
 
@@ -21,18 +21,20 @@ dependencies = [ #
 ]
 
 [project.scripts]
-protoban = "protoban.__main__:main"
+ff8000 = "ff8000.__main__:main"
 
 [build-system]
 requires      = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.version]
-path    = "src/protoban/_version.py"
+path    = "src/ff8000/_version.py"
 pattern = '__version__(?:: str)? *= *\"(?P<version>[^\"]+)\"'
 
 [dependency-groups]
 dev = [ #
-	"ty==0.0.65",
-	"pip",
+	"ty==0.0.97",
+	"ruff==0.17.3",
+	"uv==0.13.7",
+	"pip>=26.3",
 ]
