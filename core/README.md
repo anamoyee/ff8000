@@ -2,6 +2,8 @@
 
 A customizable, modular, fully-typed discord bot written in python (hikari). Designed for a mix of standard modules as well as easy integration with your own custom functionality, all in one sleek bot user on your server. Inspired by [Red-DiscordBot](https://github.com/cog-creators/red-discordbot)
 
+Unlike Red, this bot is targeted at userbase which knows how to code in python & knows at least the basics of the `uv` package manager (or is willing to learn!)
+
 Forked from one of my projects, ProtoBan.
 
 ## Installation & Usage
@@ -12,7 +14,9 @@ Forked from one of my projects, ProtoBan.
    or `pipx` or [Astral's (uv's authors) script][uv-docs], (descending order of
    recommendation))
 
-3. Use the `run.sh` script.
+3. Add your own mods by editing the `pyproject.toml` file, search mods on [pypi](https://pypi.org), github, or write your own!
+
+4. Use the `run.sh` script.
 
 > `./run.sh`
 
