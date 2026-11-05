@@ -17,8 +17,10 @@ Forked from one of my projects, ProtoBan.
 - Add a documentation page (maybe use Github Wiki?) with a guide on how to make your own mod
   - Perhaps the following four inside some `ModInitResult` struct
   - How should a mod declare its privilidged intents? (in its readme?)
+  - How should a mod declare its oauth2 scopes, e.g. email
+    - How to make a http server which listens for the incoming authorizations and saves emails in a db or wahtever.
+    - How should a mod declare its required guild role permissions
   - How should a mod declare its required bot install modes (user install, guild install)
-  - How should a mod declare its required role permissions
   - How should a mod declare its contributions to the bot's ToS and privacy policy
     - How should this update automatically and how to host it. spin up a fastapi server alongside the bot..? nahh? idk
   - How should a mod declare its bot emojis
