@@ -9,7 +9,6 @@ from rich.logging import RichHandler
 from rich.traceback import install as rich_traceback_install
 
 from ._version import __version__
-from .data import Data__
 from .get_logger import get_logger
 
 CONSOLE = Console(
@@ -86,19 +85,20 @@ def setup_logging_to_stdout_rich() -> None:
 	)
 
 
-def setup_logging_to_file() -> None:
-	root_logger = logging.getLogger()
+# TODO: for now commented out, move to a mod, like ff8000.mods.file_logging
+# def setup_logging_to_file() -> None:
+# 	root_logger = logging.getLogger()
 
-	file_handler = logging.FileHandler(Data__.LOG_CURRENT(), mode="a", encoding="utf-8")
+# 	file_handler = logging.FileHandler(Data__.LOG_CURRENT(), mode="a", encoding="utf-8")
 
-	file_handler.setFormatter(
-		formatter := logging.Formatter(
-			fmt="%(levelname).1s %(asctime)s %(name)s: %(message)s",
-			datefmt="%Y-%m-%d %H:%M:%S",  # tried to add miliseconds, but logging apparently poorly supports them...
-		)
-	)
+# 	file_handler.setFormatter(
+# 		formatter := logging.Formatter(
+# 			fmt="%(levelname).1s %(asctime)s %(name)s: %(message)s",
+# 			datefmt="%Y-%m-%d %H:%M:%S",  # tried to add miliseconds, but logging apparently poorly supports them...
+# 		)
+# 	)
 
-	root_logger.addHandler(file_handler)
+# 	root_logger.addHandler(file_handler)
 
 
 def run() -> None:
@@ -143,15 +143,15 @@ def __root__(
 	hikari.internal.ux.print_banner("hikari", allow_color=True, force_color=False)
 	logger = get_logger(__name__)
 
-	logger.info("Data__.ROOT() path locked in as %s", Data__.ROOT())
+	# logger.info("Data__.ROOT() path locked in as %s", Data__.ROOT())
 
-	if True:  # "pre-starting event"
-		if Data__.LOG_CURRENT().exists():
-			logger.warning("Unrotated current log file exists (probably from a previous run that might have exited unexpectedly). Rotating it now...")
-			new_path = Data__.rotate_current_log()
-			logger.info("Rotated current log file to: %s", new_path)
+	# if True:  # "pre-starting event"
+	# 	if Data__.LOG_CURRENT().exists():
+	# 		logger.warning("Unrotated current log file exists (probably from a previous run that might have exited unexpectedly). Rotating it now...")
+	# 		new_path = Data__.rotate_current_log()
+	# 		logger.info("Rotated current log file to: %s", new_path)
 
-		setup_logging_to_file()
+	# 	setup_logging_to_file()
 
 	try:
 		run()
@@ -161,13 +161,13 @@ def __root__(
 
 		raise
 
-	if True:  # "post-stopped event"
-		if Data__.LOG_CURRENT().exists():
-			new_path = Data__.rotate_current_log()
-			logger.info("Rotated current log file to: %s", new_path)
-			Data__.LOG_CURRENT().unlink(missing_ok=True)
-		else:
-			logger.warning("Current log file does not exist...? Cannot rotate a missing file.")
+	# if True:  # "post-stopped event"
+	# 	if Data__.LOG_CURRENT().exists():
+	# 		new_path = Data__.rotate_current_log()
+	# 		logger.info("Rotated current log file to: %s", new_path)
+	# 		Data__.LOG_CURRENT().unlink(missing_ok=True)
+	# 	else:
+	# 		logger.warning("Current log file does not exist...? Cannot rotate a missing file.")
 
 
 def main():
