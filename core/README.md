@@ -15,11 +15,12 @@ Forked from one of my projects, ProtoBan.
 - Tweak the documentation on how to use `run.sh`'s modes (`dev`, `prod`), and suggest `./run.sh prod` instead of not putting an argument (which defaults to `dev` which might result in dev features being enabled.)
 - Add an example mod(s) and include the suggested dir/file structure (e.g. `mkdir -p commands/admin events hooks view`) as well as the required __init__.py shape.
 - Add a documentation page (maybe use Github Wiki?) with a guide on how to make your own mod
+  - Perhaps the following four inside some `ModInitResult` struct
   - How should a mod declare its privilidged intents? (in its readme?)
   - How should a mod declare its required bot install modes (user install, guild install)
+  - How should a mod declare its required role permissions
   - How should a mod declare its bot emojis
     - Possibly `_.emoji` - standard config and resolution? Maybe just tools to parse a """ """ string
-    - 
     - How should the emoji IDs be put into the static config?
 - Implement the stdlib mod (`mods._`)
   - Database (`sqlmodel`)
