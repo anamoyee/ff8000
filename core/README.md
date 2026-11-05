@@ -1,6 +1,6 @@
 # `ff8000`
 
-A customizable, modular, fully-typed discord bot written in python (hikari). Designed for a mix of standard modules as well as easy integration with your own custom functionality, all in one sleek bot user on your server.
+A customizable, modular, fully-typed discord bot written in python (hikari). Designed for a mix of standard modules as well as easy integration with your own custom functionality, all in one sleek bot user on your server. Inspired by [Red-DiscordBot](https://github.com/cog-creators/red-discordbot)
 
 Forked from one of my projects, ProtoBan.
 
