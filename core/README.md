@@ -19,6 +19,8 @@ Forked from one of my projects, ProtoBan.
   - How should a mod declare its privilidged intents? (in its readme?)
   - How should a mod declare its required bot install modes (user install, guild install)
   - How should a mod declare its required role permissions
+  - How should a mod declare its contributions to the bot's ToS and privacy policy
+    - How should this update automatically and how to host it. spin up a fastapi server alongside the bot..? nahh? idk
   - How should a mod declare its bot emojis
     - Possibly `_.emoji` - standard config and resolution? Maybe just tools to parse a """ """ string
     - How should the emoji IDs be put into the static config?
@@ -32,6 +34,7 @@ Forked from one of my projects, ProtoBan.
   - Alternative: use namespace package: `ff8000.mods` and have ~~pip~~ *uv* handle the order resolution.
 - Everytihng in the google keep note
 - Update the license so it correctly works with the mods (AGPL currently doesnt let anyone have private mods, which is not what i wnat, but i do want AGPL for the bot's core)
+- Implement ToS and Privacy Policy
 
 Bot like RedDiscordBot (with module system and stdlib), but with arguably-like command parsing (arguably has some bugs, just make your own command parsing lib like nya-cli and have it be able to hook into any list[str] instead of being tied to sys.argv, for interpolations use nya-execute or whatever it's called
 use absolute import paths so import shit doesn't get fucked. mods can depend on other mods. pick mod execution order like the other version of modular bot - dependencies come first. base ("_") mod always comes first.
