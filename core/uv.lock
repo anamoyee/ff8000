@@ -94,15 +94,6 @@ speedups = [
 ]
 
 [[package]]
-name = "aiolimiter"
-version = "1.2.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f1/23/b52debf471f7a1e42e362d959a3982bdcb4fe13a5d46e63d28868807a79c/aiolimiter-1.2.1.tar.gz", hash = "sha256:e02a37ea1a855d9e832252a105420ad4d15011505512a1a1d814647451b5cca9", size = 7185, upload-time = "2024-12-08T15:31:51.496Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/f3/ba/df6e8e1045aebc4778d19b8a3a9bc1808adb1619ba94ca354d9ba17d86c3/aiolimiter-1.2.1-py3-none-any.whl", hash = "sha256:d3f249e9059a20badcb56b61601a83556133655c11d1eb3dd3e04ff069e5f3c7", size = 6711, upload-time = "2024-12-08T15:31:49.874Z" },
-]
-
-[[package]]
 name = "aiosignal"
 version = "1.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -112,18 +103,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/61/62/06741b579156360248d1ec624842ad0edf697050bbaf7c3e46394e106ad1/aiosignal-1.4.0.tar.gz", hash = "sha256:f47eecd9468083c2029cc99945502cb7708b082c232f9aca65da147157b251c7", size = 25007, upload-time = "2025-07-03T22:54:43.528Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl", hash = "sha256:053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e", size = 7490, upload-time = "2025-07-03T22:54:42.156Z" },
-]
-
-[[package]]
-name = "alluka"
-version = "0.3.3"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "typing-extensions" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/70/85/9ff6e496788aba9b74bc46c97fc77e53d4eb7b98fb416a0737e2ce5cb81e/alluka-0.3.3.tar.gz", hash = "sha256:92d254d7ab073275ce385bb1a2c4bec1c4eb26bbfd2aae7b57e5f8554cb4a037", size = 266495, upload-time = "2024-10-13T15:54:26.27Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/ec/d9/67f23fbb6615b60c957d0b57b83e08c077474e70afc29abf77dda0ba35db/alluka-0.3.3-py3-none-any.whl", hash = "sha256:4d686949e1c28a23831584aec1ea7151c2e2234bb6369115e7c421a2af6cce7d", size = 69624, upload-time = "2024-10-13T15:54:24.87Z" },
 ]
 
 [[package]]
@@ -139,30 +118,12 @@ wheels = [
 ]
 
 [[package]]
-name = "astpretty"
-version = "3.0.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/2d/b6/ffec7edce2a8315ef1acd4ae2e334ba428db2b2e8d7577a9aaf1e434034d/astpretty-3.0.0.tar.gz", hash = "sha256:b08c95f32e5994454ea99882ff3c4a0afc8254c38998a0ed4b479dba448dc581", size = 4675, upload-time = "2022-05-16T23:41:24.712Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/9f/0a/79fff71a08bc0cc427f0dfbd4cca62b60f7f277aae81b89b79e9b04d526d/astpretty-3.0.0-py2.py3-none-any.whl", hash = "sha256:15bfd47593667169485a1fa7938b8de9445b11057d6f2b6e214b2f70667f94b6", size = 4928, upload-time = "2022-05-16T23:41:23.422Z" },
-]
-
-[[package]]
-name = "asyncstdlib"
-version = "3.14.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/3a/66/7b76f2b48afc5c8b4648500a4ff9869f83528e3d601a19de51da18b5e8a5/asyncstdlib-3.14.0.tar.gz", hash = "sha256:f99396992a3bba7495d8cf6c832bfe8c8727f61213233d3569a5a9cbd1c04385", size = 51074, upload-time = "2026-03-20T21:06:46.025Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/50/463443651ddb0ba66c289d5649369099ab72b4665888b337ed25ea622550/asyncstdlib-3.14.0-py3-none-any.whl", hash = "sha256:cad90c590ce357da6e70c56f0e2ad9e9baaf146a8fc2ede189879da57eb8bd87", size = 44255, upload-time = "2026-03-20T21:06:45.033Z" },
-]
-
-[[package]]
 name = "attrs"
-version = "25.4.0"
+version = "26.1.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/6b/5c/685e6633917e101e5dcb62b9dd76946cbb57c26e133bae9e0cd36033c0a9/attrs-25.4.0.tar.gz", hash = "sha256:16d5969b87f0859ef33a48b35d55ac1be6e42ae49d5e853b597db70c35c57e11", size = 934251, upload-time = "2025-10-06T13:54:44.725Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9a/8e/82a0fe20a541c03148528be8cac2408564a6c9a0cc7e9171802bc1d26985/attrs-26.1.0.tar.gz", hash = "sha256:d03ceb89cb322a8fd706d4fb91940737b6642aa36998fe130a9bc96c985eff32", size = 952055, upload-time = "2026-03-19T14:22:25.026Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3a/2a/7cc015f5b9f5db42b7d48157e23356022889fc354a2813c15934b7cb5c0e/attrs-25.4.0-py3-none-any.whl", hash = "sha256:adcf7e2a1fb3b36ac48d97835bb6d8ade15b8dcce26aba8bf1d14847b57a3373", size = 67615, upload-time = "2025-10-06T13:54:43.17Z" },
+    { url = "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl", hash = "sha256:c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309", size = 67548, upload-time = "2026-03-19T14:22:23.645Z" },
 ]
 
 [[package]]
@@ -289,18 +250,8 @@ wheels = [
 name = "ff8000"
 source = { editable = "." }
 dependencies = [
-    { name = "aiohttp" },
-    { name = "aiolimiter" },
     { name = "arguably" },
-    { name = "asyncstdlib" },
     { name = "hikari", extra = ["speedups"] },
-    { name = "hikari-arc" },
-    { name = "hikari-miru" },
-    { name = "nya-codeblock" },
-    { name = "nya-fmt" },
-    { name = "nya-scope" },
-    { name = "platformdirs" },
-    { name = "rich" },
 ]
 
 [package.dev-dependencies]
@@ -313,18 +264,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "aiohttp", specifier = "==3.14.3" },
-    { name = "aiolimiter", specifier = ">=1.2.1" },
-    { name = "arguably", specifier = "==1.3.0" },
-    { name = "asyncstdlib", specifier = "==3.14.0" },
-    { name = "hikari", extras = ["speedups"], specifier = "==2.5.0" },
-    { name = "hikari-arc", specifier = "==2.3.0" },
-    { name = "hikari-miru", specifier = "==4.2.0" },
-    { name = "nya-codeblock", specifier = "==0.1.2" },
-    { name = "nya-fmt", specifier = "==0.1.1" },
-    { name = "nya-scope", specifier = "==0.3.1" },
-    { name = "platformdirs", specifier = "==4.11.0" },
-    { name = "rich", specifier = "==15.0.0" },
+    { name = "arguably", specifier = ">=1.3.0,<1.4" },
+    { name = "hikari", extras = ["speedups"], specifier = ">=2.7.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -378,7 +319,7 @@ wheels = [
 
 [[package]]
 name = "hikari"
-version = "2.5.0"
+version = "2.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -386,9 +327,9 @@ dependencies = [
     { name = "colorlog" },
     { name = "multidict" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/06/bd/e4bd16c662fe7614bb6f38aba40a095aef998af0602674fe24740d3814cd/hikari-2.5.0.tar.gz", hash = "sha256:b8fe7e5cd5adfedcdcc488a86781bc946002fb79d984a473736624dd8201993b", size = 1924829, upload-time = "2025-10-31T12:34:27.838Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/30/8e/49889cd48e26f80fd3518841cc2dabe47121f28e12621dc9157642050074/hikari-2.7.0.tar.gz", hash = "sha256:2a45ed800cb749411c20e665e584d62adbf12b9f0dc70e52e81637fcd4cbf44e", size = 1978392, upload-time = "2026-10-25T11:03:59.61Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/66/c5/256c7d498cbe8e67edfd9bb2971740eadb662effcf9b9c1aff8e6d21e90d/hikari-2.5.0-py3-none-any.whl", hash = "sha256:fd108b51c73f46b562ac9e7cd48d4f74655224083ae37a319a417c30418a40ec", size = 580206, upload-time = "2025-10-31T12:34:25.633Z" },
+    { url = "https://files.pythonhosted.org/packages/70/bf/b0d2eac9c8aa3dbdbd3616201b274f5a65cde6d8482fbe4fdf37c051299a/hikari-2.7.0-py3-none-any.whl", hash = "sha256:984fca47d1bb1ebf99f01407807078e8a851566b14e871b151e22ea10424b9a6", size = 602424, upload-time = "2026-10-25T11:03:57.767Z" },
 ]
 
 [package.optional-dependencies]
@@ -399,62 +340,12 @@ speedups = [
 ]
 
 [[package]]
-name = "hikari-arc"
-version = "2.3.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "alluka" },
-    { name = "attrs" },
-    { name = "hikari" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/32/77/bba7d9a4d0026e8e84aac6aedfba2eb77d7afa1ce4013ad4bddd30334422/hikari_arc-2.3.0.tar.gz", hash = "sha256:a7ee2515965e6dc4390dbc3563f569c7e26c729caea68816cec660fd676eb499", size = 1480119, upload-time = "2026-05-01T19:45:10.075Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/5d/f3/d218776e22fcab9509a5d285b761d9d35e7bf852ee122e83fba6121a54eb/hikari_arc-2.3.0-py3-none-any.whl", hash = "sha256:38821f305127312b4a9337e5dc25cefaf1bed1561cdd4ad269430e970c97488e", size = 127582, upload-time = "2026-05-01T19:45:11.741Z" },
-]
-
-[[package]]
-name = "hikari-miru"
-version = "4.2.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "alluka" },
-    { name = "attrs" },
-    { name = "colorama", marker = "sys_platform == 'win32'" },
-    { name = "hikari" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/2d/ce/d97375fa52eaf9c66639e97b0dfb528a1f9cc38c982efa667e4e57bd69da/hikari_miru-4.2.0.tar.gz", hash = "sha256:1bb6737c7f1fe062ab0d7b357b9b447de2e84e9cea27b8bb826f66f307abb8a0", size = 52243, upload-time = "2024-10-08T16:30:20.863Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a7/21/08aaaafba09d193898ba296d2903d16f6cef696ff6770a7626e613e6aff4/hikari_miru-4.2.0-py3-none-any.whl", hash = "sha256:0a9e25cea76b6dbf6ec0efd64ac2f0b0a4c51de31a19bc6c101779c5ca06ea80", size = 90612, upload-time = "2024-10-08T16:30:19.143Z" },
-]
-
-[[package]]
 name = "idna"
 version = "3.18"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/cd/63/9496c57188a2ee585e0f1db071d75089a11e98aa86eb99d9d7618fc1edce/idna-3.18.tar.gz", hash = "sha256:ffb385a7e039654cef1ab9ef32c6fafe283c0c0467bba1d9029738ce4a14a848", size = 196711, upload-time = "2026-06-02T14:34:07.794Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl", hash = "sha256:7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2", size = 65455, upload-time = "2026-06-02T14:34:06.319Z" },
-]
-
-[[package]]
-name = "markdown-it-py"
-version = "4.2.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "mdurl" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/06/ff/7841249c247aa650a76b9ee4bbaeae59370dc8bfd2f6c01f3630c35eb134/markdown_it_py-4.2.0.tar.gz", hash = "sha256:04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49", size = 82454, upload-time = "2026-05-07T12:08:28.36Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl", hash = "sha256:9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a", size = 91687, upload-time = "2026-05-07T12:08:27.182Z" },
-]
-
-[[package]]
-name = "mdurl"
-version = "0.1.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba", size = 8729, upload-time = "2022-08-14T12:40:10.846Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8", size = 9979, upload-time = "2022-08-14T12:40:09.779Z" },
 ]
 
 [[package]]
@@ -503,63 +394,6 @@ wheels = [
 ]
 
 [[package]]
-name = "nya-codeblock"
-version = "0.1.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "nya-extract-error" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/05/15/194a320705e53e7a5f56ede7842afa374151e6ae7626319b1962a2f958bb/nya_codeblock-0.1.2.tar.gz", hash = "sha256:bde93840bb1406950657994fafdf460647e8617d2411ca90693f5a1d0d4000a1", size = 15549, upload-time = "2026-07-26T18:42:53.865Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/0d/91/b3ab3ce8c200e84e43d11d4f85dc4928abddf142781646799080b831e388/nya_codeblock-0.1.2-py3-none-any.whl", hash = "sha256:daf1fff5d15f5fbba7d3cc0ef94c3a9114941fa9b24be3c7ac902b93553e9ac0", size = 3748, upload-time = "2026-07-26T18:42:52.814Z" },
-]
-
-[[package]]
-name = "nya-extract-error"
-version = "0.1.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/7d/05/1eb511b342311eaafeae48d91bb70db33037d4fa242aa4592f26797a0aca/nya_extract_error-0.1.1.tar.gz", hash = "sha256:097a5eb70e59eb58facfbf15518a2495abfa0032e6c78e3e938deba794bb8c63", size = 13880, upload-time = "2026-07-20T09:26:44.157Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/25/33/eaac4e16f3733a4f2e54d063fd8f549a3ad08814fc7461296a5eef63a310/nya_extract_error-0.1.1-py3-none-any.whl", hash = "sha256:bfc6b3025db1f68f89ac251aac6877471c7f781575d83939be9282478966ed42", size = 2199, upload-time = "2026-07-20T09:26:43.262Z" },
-]
-
-[[package]]
-name = "nya-fmt"
-version = "0.1.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "astpretty" },
-    { name = "nya-result" },
-    { name = "nya-scope" },
-    { name = "rich" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/03/72/447407c3b53bd58c8a88c631a1f3ad11d21cbdfec662007b6a6885792686/nya_fmt-0.1.1.tar.gz", hash = "sha256:fdda06b5f62ad49881d6a54c40199ef6bff210e0d9230e305ce4f37c0658bdfb", size = 47725, upload-time = "2026-07-20T15:22:55.43Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7b/59/8172ef870554e936f7d893e3d43d4534262c8e0f7d2fd09b8982f82bbab7/nya_fmt-0.1.1-py3-none-any.whl", hash = "sha256:f01560b5578c3ab5919c086c7ee5ed9ba91887d260bd8c2311df7491cf860175", size = 20764, upload-time = "2026-07-20T15:22:53.999Z" },
-]
-
-[[package]]
-name = "nya-result"
-version = "0.1.4"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "nya-scope" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/23/26/8571fd4793800c61200a55d701ec41921711f28dd55f778474f89217777d/nya_result-0.1.4.tar.gz", hash = "sha256:823b8b71d3ad0427ecd812f064a7fcbbca82af069e0c643f104c27fb5d412ffb", size = 22037, upload-time = "2026-04-10T17:17:33.497Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/83/e6/e95bba0c9ef03aa646397ffbb3f6221183f9ce6b701c6b3bd57ef36ea6f5/nya_result-0.1.4-py3-none-any.whl", hash = "sha256:fff7593a5051070686a25c4434cb93024b3783171efa638aa16996f18a04cb24", size = 5601, upload-time = "2026-04-10T17:17:34.393Z" },
-]
-
-[[package]]
-name = "nya-scope"
-version = "0.3.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/4f/73/c21b91da0d458e5c68b7b73515e7351c16b8b152d8e937bea78c74572ca6/nya_scope-0.3.1.tar.gz", hash = "sha256:ac6b9425cf113382b1e67d52ba157095f21a59a4b2672ff45ae318a84be66f9c", size = 16400, upload-time = "2026-06-25T12:28:21.894Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a6/3f/342def8f5cb93d9127ea61bdd83e7046fca98bc959dcad28d9d5d26a43d6/nya_scope-0.3.1-py3-none-any.whl", hash = "sha256:8d9ca19cb923e5e07412ff68136b3d9f91a8a5d8083f3e50bbf6d16df459b329", size = 5468, upload-time = "2026-06-25T12:28:20.8Z" },
-]
-
-[[package]]
 name = "orjson"
 version = "3.11.9"
 source = { registry = "https://pypi.org/simple" }
@@ -589,15 +423,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/53/c7/f8d9e2e0e7c1ed8a22a10eeb3b5bf7860bc07d8446c7a978a882c5c8214b/pip-26.3.tar.gz", hash = "sha256:6c36ae7da8695be67e3cd9f7d87919667ced53f57ce2ede75d89b5912ed2bc4c", size = 1934348, upload-time = "2026-11-02T20:34:27.738Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/07/25/ee8c38ae72d66b844ce8eb9711ba905dba21ca1a8a0c960057c41cd23337/pip-26.3-py3-none-any.whl", hash = "sha256:f3b60b20ffaadd4415ed7957212a38ac63fa4c5fa375bd0f4a797777940fad13", size = 1950951, upload-time = "2026-11-02T20:34:25.728Z" },
-]
-
-[[package]]
-name = "platformdirs"
-version = "4.11.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/78/9b/560e4be8e26f6fd133a03630a8df0c663b9e8d61b4ade152b72005aec83b/platformdirs-4.11.0.tar.gz", hash = "sha256:0555d18370482847566ffabcaa53ad7c6c1c29f195989ae1ed634a05f76ea1e0", size = 31953, upload-time = "2026-07-21T13:09:36.565Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7d/68/d8d58938dfb1370b266a1a729e6d77a985be23689a0496498ee17b2cbf90/platformdirs-4.11.0-py3-none-any.whl", hash = "sha256:360ccded2b7fce0af0ff80cc8f5942a1c5d99b0e856033acb030bfc634709e74", size = 23247, upload-time = "2026-07-21T13:09:35.422Z" },
 ]
 
 [[package]]
@@ -688,28 +513,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pygments"
-version = "2.20.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/c3/b2/bc9c9196916376152d655522fdcebac55e66de6603a76a02bca1b6414f6c/pygments-2.20.0.tar.gz", hash = "sha256:6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f", size = 4955991, upload-time = "2026-03-29T13:29:33.898Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/f4/7e/a72dd26f3b0f4f2bf1dd8923c85f7ceb43172af56d63c7383eb62b332364/pygments-2.20.0-py3-none-any.whl", hash = "sha256:81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176", size = 1231151, upload-time = "2026-03-29T13:29:30.038Z" },
-]
-
-[[package]]
-name = "rich"
-version = "15.0.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "markdown-it-py" },
-    { name = "pygments" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/c0/8f/0722ca900cc807c13a6a0c696dacf35430f72e0ec571c4275d2371fca3e9/rich-15.0.0.tar.gz", hash = "sha256:edd07a4824c6b40189fb7ac9bc4c52536e9780fbbfbddf6f1e2502c31b068c36", size = 230680, upload-time = "2026-04-12T08:24:00.75Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl", hash = "sha256:33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb", size = 310654, upload-time = "2026-04-12T08:24:02.83Z" },
-]
-
-[[package]]
 name = "ruff"
 version = "0.17.3"
 source = { registry = "https://pypi.org/simple" }
@@ -757,15 +560,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/eb/bc/be5c37bac8b99853e68ea5f11536231ffa988f63cb6785288cf6d5d87368/ty-0.0.97-py3-none-win32.whl", hash = "sha256:8e2aa95973b1be330db33c46b10ba02d92e35930b70d06200c1f06512af6824a", size = 13560323, upload-time = "2026-11-04T09:15:35.258Z" },
     { url = "https://files.pythonhosted.org/packages/b6/47/5d9b908dbc4a2addb984c3d58f008db75dd9c7cd04f0a7d92530779c1bd5/ty-0.0.97-py3-none-win_amd64.whl", hash = "sha256:69deddd2d1c4fbb2cae902a8c0d7c7ed67113659edcfd59ab5b6e4a2a02081ee", size = 14184823, upload-time = "2026-11-04T09:15:38.335Z" },
     { url = "https://files.pythonhosted.org/packages/24/50/f0e0e2f137bd1b3539809a248b552002cd0b8b00ed36114acb9ca72eca8c/ty-0.0.97-py3-none-win_arm64.whl", hash = "sha256:88ec7fd1a91d70ed43fab52e326b375129c44c6b64d6c289825fb4561bc80253", size = 13685279, upload-time = "2026-11-04T09:15:41.961Z" },
-]
-
-[[package]]
-name = "typing-extensions"
-version = "4.16.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f6/cc/6253133b5bb138fc3306cebfbda2c520f545d36b5be2c7255cc528bb45d6/typing_extensions-4.16.0.tar.gz", hash = "sha256:dc983d19a509c94dba722ee6abd33940f7c05a89e243c47e907eb4db6f1a43e5", size = 113555, upload-time = "2026-07-02T08:40:05.92Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl", hash = "sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8", size = 45571, upload-time = "2026-07-02T08:40:04.659Z" },
 ]
 
 [[package]]
