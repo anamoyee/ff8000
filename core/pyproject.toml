@@ -3,11 +3,12 @@ name            = 'ff8000'
 dynamic         = ['version']
 description     = 'A customizable, modular, fully-typed discord bot written in python (hikari). Designed for a mix of standard modules as well as easy integration with your own custom functionality, all in one sleek bot user on your server. Forked from one of my projects, ProtoBan.'
 readme          = "README.md"
-requires-python = "==3.14.6"
+requires-python = ">=3.14.6"
 
 dependencies = [ #
 	"arguably>=1.3.0,<1.4",
 	"hikari[speedups]>=2.7.0",
+	"rich>2.7.0",
 ]
 
 [project.scripts]
@@ -20,6 +21,9 @@ build-backend = "hatchling.build"
 [tool.hatch.version]
 path    = "src/ff8000/_version.py"
 pattern = '__version__(?:: str)? *= *\"(?P<version>[^\"]+)\"'
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ff8000"]
 
 [dependency-groups]
 dev = [ #

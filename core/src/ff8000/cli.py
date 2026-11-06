@@ -102,8 +102,10 @@ def setup_logging_to_stdout_rich() -> None:
 
 
 def run() -> None:
+	from ._load_mods import load_all_mods
 	from .bot import BOT
 
+	load_all_mods()
 	BOT.run()
 
 
