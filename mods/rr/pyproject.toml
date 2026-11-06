@@ -1,0 +1,20 @@
+[project]
+name            = "ff8000.mods.rr"
+version         = "0.1.0"
+description     = "Reaction Roles mod for ff8000"
+requires-python = "==3.14.*"
+
+dependencies = [
+    "ff8000",
+    # add mod-specific deps here, e.g.:
+    # "some-extra-library>=1.0",
+]
+
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# Install from src/, but only the ff8000/ namespace subtree.
+# Hatchling will merge ff8000/mods/rr/ into the installed ff8000 namespace.
+packages = ["src/ff8000"]

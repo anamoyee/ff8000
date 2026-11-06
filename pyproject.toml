@@ -1,0 +1,18 @@
+[project]
+name            = "my-ff8000-bot"
+version         = "0.1.0"
+requires-python = "==3.14.*"
+
+dependencies = [
+	"ff8000", # always required
+	"ff8000.mods.rr", # opted into this mod
+]
+
+[tool.uv.workspace]
+members = ["core", "mods/*"]
+
+[tool.uv.sources]
+# Built-in mods are resolved from local workspace paths, not PyPI.
+# Remove a line here to fall back to PyPI (e.g. for community mods).
+ff8000           = { workspace = true }
+"ff8000.mods.rr" = { workspace = true }
