@@ -27,15 +27,13 @@ echo "${C_BLUE}Info:${C_RESET} Running in '${environment}' environment"
 if [[ -v OVERRIDE_TOKEN ]]; then
 	bot_token="${OVERRIDE_TOKEN}"
 else
-	bot_token=$(pass "discord_tokens/${environment}/ff8000")
-	if [[ $? -ne 0 ]]; then
+	if ! bot_token=$(pass "discord_tokens/${environment}/ff8000"); then
 		echo "${C_RED}Error:${C_RESET} Failed to retrieve token from pass"
 		exit 1
 	fi
 fi
 
-uv sync
-if [[ $? -ne 0 ]]; then
+if ! uv sync; then
 	echo "${C_RED}Error:${C_RESET} Failed to uv sync"
 	exit 1
 fi
